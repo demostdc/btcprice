@@ -24,7 +24,7 @@ app.get(/^(.+)$/, function(req, res){
 	response.on('end', function() {
                     // Data reception is done, do whatever with it!
                     var parsed = JSON.parse(body);
-                    res.send("<body bgcolor='blue'><H1><div align='center'>BTC [USD]: " + parsed.bpi.USD.rate + "</H1></div>");
+                    res.send("<body bgcolor='green'><H1><div align='center'>BTC [USD]: " + parsed.bpi.USD.rate + "</H1></div>");
 	            });
 	    }
 	);
