@@ -3,7 +3,7 @@ var express = require("express");
 
 var app = express();
 
-var HTTP_PORT = 80;
+var HTTP_PORT = 8080;
 
 var httpServer = http.createServer(app).listen(HTTP_PORT);
 
